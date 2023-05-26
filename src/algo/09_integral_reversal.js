@@ -19,7 +19,15 @@
 
 // The implementation
 export function integralReversalFn(num) {
-
+    let result;
+    let arr = num.toString().split('').reverse();
+    if (num >= 0) {
+        result = +arr.join('');
+    } else {
+        arr = arr.slice(0, -1);
+        result = -arr.join('');
+    }
+    return result;
 }
 
 

@@ -20,7 +20,14 @@
 
 // The implementation
 export function isUniqueFn(arr) {
-
+    let result = true;
+    const sortedArr = arr.sort((a, b) => a - b);
+    for (let i = 1; i < sortedArr.length; i++) {
+        if (sortedArr[i] === sortedArr[i - 1]) {
+            result = false;
+        }
+    }
+    return result;
 }
 
 

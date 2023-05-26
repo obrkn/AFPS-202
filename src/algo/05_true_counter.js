@@ -19,7 +19,13 @@
 
 // The implementation
 export function trueCounterFn(arr) {
-
+    let count = 0;
+    arr.forEach(bool => {
+        if (bool) {
+            count++;
+        }
+    })
+    return count;
 }
 
 

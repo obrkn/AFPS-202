@@ -21,7 +21,10 @@
 
 // The implementation
 export function anagramFn(str1, str2) {
-
+    const sortedStr1 = str1.toLowerCase().split('').sort().join('').trim();
+    const sortedStr2 = str2.toLowerCase().split('').sort().join('').trim();
+    if (sortedStr1 === sortedStr2) return true;
+    return false;
 }
 
 

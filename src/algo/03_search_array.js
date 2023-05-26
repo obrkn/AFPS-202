@@ -17,7 +17,13 @@
 
 // The implementation
 export function searchArrayFn(arr, target) {
-
+    let result = false;
+    arr.forEach(num => {
+        if (num === target) {
+            result = true;
+        }
+    })
+    return result;
 }
 
 
